@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const array = [1, 212, 23, 45, 567, 77, 8, 90, 999,] //membuat array yang nanti nya akan di cari 
+        const search = 4                                  //nilai array yang kamu cari
+        const found = isContains(array, search)  // isi dalam value nya adalah array and search
+
+        function isContains(array, searchValue) {
+            for (const element of array) {
+                if (element === searchValue) {
+                    return true
+                }
+            }
+            return false
+        }
+
+        document.writeln(` hasil kamu adalah ${found} `)
+
+    </script>
+
+</body>
+
+</html>
